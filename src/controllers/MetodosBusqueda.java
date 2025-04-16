@@ -11,7 +11,8 @@ public class MetodosBusqueda {
     public MetodosBusqueda(Person[] persons) {
         showConsole = new ShowConsole();
         this.people = persons;
-        showPersonByCode();    }
+        showPersonByCode();
+    }
 
     public int busqueaLineal(int[] arreglo, int valorBuscar){
         for (int i = 0; i < arreglo.length; i++){
@@ -38,7 +39,7 @@ public class MetodosBusqueda {
             showConsole.showMessage("Persona Encontrada");
             showConsole.showMessage(people[indexPerson].toString());
         }else{
-            showConsole.showMessage("Persona con codigo "+ codeToFind +" no encontrada");
+            showConsole.showMessage("Persona con codigo " + codeToFind + " no encontrada");
         }
-    } 
+    }
 }
